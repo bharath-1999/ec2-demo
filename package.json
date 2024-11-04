@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"node app.js",
     "compile": "./node_modules/.bin/tsc",
     "test-only": "node -r dotenv/config ./node_modules/jasmine-xml-reporter/bin/jasmine.js --junitreport --output=test-reports/ dotenv_config_path=.env/test.env",
     "test": "npm run compile && npm run test-only",
